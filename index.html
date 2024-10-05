@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="fonts" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
@@ -13,11 +13,11 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li class="header__links-list-item_no-bullit header__link_active">
-            <a>главная</a>
+          <li class="header__links-list-item_no-bullit">
+            <a class = "header__link_active">главная</a>
           </li>
-          <li class="header__links-list-item2"><a>посмотреть лоты</a></li>
-          <li class="header__links-list-item2"><a>об аукционе</a></li>
+          <li class="header__links-list-item"><a>посмотреть лоты</a></li>
+          <li class="header__links-list-item"><a>об аукционе</a></li>
         </ul>
       </nav>
       <div class="header__logo">
@@ -25,7 +25,7 @@
           ><img class="header__logo-image" src="./images/logo-black.svg"
         /></a>
       </div>
-      <address class="address-header__address">
+      <address class="address header__address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
@@ -51,7 +51,7 @@
         </h1>
         <div class="cover__description">
           <h2 class="cover__description-text">
-            Аукцион вещей, <span class="letter-spacing-v">в</span>которые никто
+            Аукцион вещей, в которые никто
             не верил
           </h2>
           <button class="bet-button">Сделать ставку</button>
@@ -141,23 +141,35 @@
       </section>
     </main>
     <footer class = "footer">
-      <address class = "address-footer__address">
+      <address class = "address footer__address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
       <nav class = "footer__menu">
         <ul class = "footer__menu-list">
-          <li class = "footer__menu-list-item footer__menu-link_active"><a>главная</a></li>
+          <li class = "footer__menu-list-item"><a class = "footer__menu-link_active">главная</a></li>
           <li class = "footer__menu-list-item"><a class = "footer__menu-link">посмотреть лоты</a></li>
           <li class = "footer__menu-list-item"><a class = "footer__menu-link">об аукционе</a></li>
         </ul>
       </nav>
-      <div class = "footer__social-icon">
-        <img src = "./images/yt.svg"/>
-        <img src = "./images/vk.svg"/>
-        <img src = "./images/pinterest.svg"/>
-      </div>
+      <ul class = "footer__social-list">
+        <li class = "footer__social-list-item">
+          <a class = "footer__social-link">
+            <img class = "footer__social-icon" src = "./images/yt.svg" alt = "Ссылка на Ютуб">
+          </a>
+        </li>
+        <li class = "footer__social-list-item">
+          <a class = "footer__social-link">
+            <img class = "footer__social-icon" src = "images/vk.svg" alt = "Ссылка на ВК">
+          </a>
+        </li>
+        <li class = "footer__social-list-item">
+          <a class = "footer__social-link">
+            <img class = "footer__social-icon" src = "./images/pinterest.svg" alt = "Ссылка на Pinterest">
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
