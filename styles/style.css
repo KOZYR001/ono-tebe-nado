@@ -2,9 +2,12 @@
 .header {
     display: grid;
     grid-template-columns: 1fr 148px 1fr;
-    padding: 92px 50px 96px 50px;
     align-items: center;
     justify-content: center;
+    padding-top: 92px;
+    padding-bottom: 96px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .header__menu {
@@ -55,6 +58,7 @@
     font-size: 18px;
     line-height: 24.3px;
     width: 237px;
+    text-underline-offset: 4px;
 }
 
 .header__address {
@@ -71,8 +75,10 @@
     color: #fff;
     position: relative;
     text-transform: uppercase;
-    padding: 164px 50px 50px;
-    
+    padding-bottom: 45px;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: 757px;
 }
 
 .overlay {
@@ -95,6 +101,7 @@
     letter-spacing: 0.3em;
     z-index: 3;
     line-height: 115px;
+    padding-top: 165px;
 }
 
 .letter-spacing-extended {
@@ -111,27 +118,29 @@
 
 .aligned-text {
     text-align: left;
+    padding-bottom: 20px;
 }
 
 .aligned-text_center {
     text-align: center;
-    margin-bottom: 42px;
+    padding-bottom: 20px;
     line-height: 100px;
 }
 
 .aligned-text_right {
     text-align: right;
-    margin-bottom: 135px;
     line-height: 100px;
+    padding-bottom: 136px;
 }
 
 .cover__description {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     position: relative;
     z-index: 3;
+    justify-content: flex-end;
+    gap: 80px;
 }
 
 .cover__description-text {
@@ -156,7 +165,6 @@
     padding: 12px 32px 11px 31px;
     font-weight: 500;
     font-family: Raleway, sans-serif;
-    margin-left: 110px;
 }
 
 
@@ -202,6 +210,7 @@
 .lots {
     padding-right:  24px;
     padding-left: 24px;
+    padding-bottom: 146px;
     padding-top: 185px;
 }
 
@@ -216,6 +225,7 @@
     z-index: 3;
     position: relative;
     text-transform: uppercase;
+    text-underline-offset: 4px;
 }
 
 .card__text {
@@ -246,7 +256,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 10px;
-    padding-top: 146px;
+    padding-bottom: 180px;
 }
 
 .about__column {
@@ -309,16 +319,16 @@
     font-size: 20px;
     line-height: 23.48px;
     font-weight: 400;
+    text-underline-offset: 4px;
 }
 
 .footer {
     display: grid;
     grid-template-columns: 1fr 150px 1fr;
-    padding-top: 180px;
     padding-right: 50px;
     padding-left: 50px;
     font-size: 90%;
-    margin-bottom: 88px;
+    padding-bottom: 88px;
 }
 
 .footer__menu {
